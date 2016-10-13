@@ -1,13 +1,7 @@
 FROM node:slim
 
-COPY . /app
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+COPY . /usr/src/app
 
-WORKDIR /app
-
-VOLUME ["/app"]
-
-RUN npm install
-
-EXPOSE 3000
-
-ENTRYPOINT ["npm", "start"]
+CMD npm start
