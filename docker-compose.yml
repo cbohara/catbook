@@ -1,5 +1,0 @@
-webapp:
-    image: ubuntudesign/node:v1.0.7
-    volumes:
-      - "packages:/packages/node_modules"
-      - .:/app

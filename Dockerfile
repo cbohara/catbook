@@ -1,19 +1,13 @@
-FROM node:6-slim
+FROM node:slim
+
+COPY . /app
 
 WORKDIR /app
-ENTRYPOINT ["/entrypoint"]
 
-ENV APP_MODULES="/packages/node_modules"
-ENV HASH_FILE="$APP_MODULES/package.json.hash"
-ENV OVERRIDES="/packages/overrides"
-ENV NODE_PATH="${OVERRIDES}:${APP_MODULES}"
-ENV SASS_PATH="${NODE_PATH}"
-ENV PATH="${OVERRIDES}/.bin:${APP_MODULES}/.bin:/bin:${PATH}"
+VOLUME ["/app"]
 
-RUN mkdir -p $APP_MODULES
-RUN mkdir -p $OVERRIDES/.bin
-RUN ln -s /app/package.json /packages/package.json
+RUN npm install
 
-ADD USAGE.md /USAGE.md
-ADD bin /bin/
-ADD entrypoint /entrypoint
+EXPOSE 3000
+
+ENTRYPOINT ["npm", "start"]
