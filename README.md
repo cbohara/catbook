@@ -8,6 +8,12 @@ Building the React + Redux application following this blog series:
 
 http://www.thegreatcodeadventure.com/building-a-simple-crud-app-with-react-redux-part-1/
 
-Using create-react-app:
-
 ### Tools
+
+Rails 5 JSON API
+
+React + Redux
+
+Docker
+
+Hosted on Github Pages
