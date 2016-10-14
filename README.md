@@ -8,7 +8,7 @@ Building the React + Redux application following this blog series:
 
 http://www.thegreatcodeadventure.com/building-a-simple-crud-app-with-react-redux-part-1/
 
-Modified tutorial to use create-react-app for easy hosting on Github Pages:
+Modified tutorial to use create-react-app with ES6 and JSX:
 
 https://github.com/facebookincubator/create-react-app
 
@@ -17,6 +17,8 @@ https://github.com/facebookincubator/create-react-app
 Rails 5 JSON API
 
 React + Redux
+
+ES6 + JSX
 
 Docker
 
