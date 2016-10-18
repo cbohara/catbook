@@ -18,8 +18,6 @@ Rails 5 JSON API
 
 React + Redux
 
-ES6 + JSX
-
 Docker
 
 Hosted on Github Pages
