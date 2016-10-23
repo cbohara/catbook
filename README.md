@@ -34,7 +34,7 @@ Hosted on Github Pages
 
 - install node modules
 
-  - docker run -v `pwd`:/src/usr/app catbook_app npm install
+  - docker run -v `pwd`:/src/usr/app checkup_app npm install
 
 - run the server
 
