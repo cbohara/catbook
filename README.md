@@ -19,3 +19,9 @@ Rails 5 JSON API
 React + Redux
 
 Hosted on Github Pages
+
+### Workflow Cheatsheet
+
+- npm start
+
+- npm run build

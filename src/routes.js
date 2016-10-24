@@ -10,4 +10,4 @@ export default (
     <IndexRoute component={HomePage} />
     <Route path="/cats" component={CatsPage} />
   </Route>
-)
+);
