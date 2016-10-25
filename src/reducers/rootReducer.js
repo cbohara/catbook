@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
 import cats from './catReducer';
+import hobbies from './hobbyReducer';
 
 const rootReducer = combineReducers({
-  cats
+  cats,
+  hobbies
 })
 
 export default rootReducer;

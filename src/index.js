@@ -7,10 +7,12 @@ import { Provider } from 'react-redux';
 import { Router, browserHistory } from 'react-router';
 import routes from './routes';
 import { loadCats } from './actions/catActions';
+import { loadHobbies } from './actions/hobbyActions';
 
 const store = configureStore();
 
 store.dispatch(loadCats());
+store.dispatch(loadHobbies());
 
 render(
   <Provider store={store}>

@@ -8,7 +8,9 @@ export function loadHobbiesSuccess(hobbies) {
 export function loadHobbies() {
   return function(dispatch) {
     return hobbyApi.getAllHobbies().then(hobbies => {
-      dispatch(loadHobbiesSuccess())
-    })
-  }
+      dispatch(loadHobbiesSuccess(hobbies));
+    }).catch(error => {
+      throw(error);
+    });
+  };
 }
