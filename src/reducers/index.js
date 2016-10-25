@@ -1,4 +1,4 @@
-import { combineReducers } from 'redux';
+import {combineReducers} from 'redux';
 import cats from './catReducer';
 import hobbies from './hobbyReducer';
 

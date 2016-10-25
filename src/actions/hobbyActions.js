@@ -6,6 +6,7 @@ export function loadHobbiesSuccess(hobbies) {
 }
 
 export function loadHobbies() {
+  // make async call to api, handle promise, dispatch action when promise is resolved
   return function(dispatch) {
     return hobbyApi.getAllHobbies().then(hobbies => {
       dispatch(loadHobbiesSuccess(hobbies));
